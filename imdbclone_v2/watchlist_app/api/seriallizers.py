@@ -6,7 +6,8 @@ class ReviewSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Review
-        fields = "__all__"
+        exclude = ('watch_list',)
+        #fields = "__all__"
 
 
 class WatchListSerializers(serializers.ModelSerializer):
